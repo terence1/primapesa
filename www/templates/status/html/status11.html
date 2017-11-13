@@ -1,0 +1,102 @@
+<style type="text/css">
+    .slider-slide-tab  span:last-child{
+        border-radius: 10px;
+        background:#ffffff;
+        padding: 3px 8px;
+        color: #ef473a;
+        position: relative;
+        bottom: 8px;
+        left: 5px;
+        font-weight: bold;
+        box-shadow:0 0 1px #fff;
+    }
+
+
+</style>
+
+
+<ion-view title="Loan Status">
+    <ion-nav-buttons side="left">
+        <a ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons>
+    
+    <ion-nav-buttons side="right">
+        <md-button ng-disabled="isLoading" class="md-icon-button ion-nav-button-right" ng-click="navigateTo('app.home')"
+                   aria-label="Setting">
+            <i class="ion-android-more-vertical"></i>
+        </md-button>
+    </ion-nav-buttons>
+    <!--pricing section-->
+    <!-- <ion-content id="pricing-content"> -->
+
+<!-- <ion-view view-title="Messages">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-android-more-vertical"  ng-click="popover.show($event)"></button>
+    </ion-nav-buttons>
+ -->
+
+
+    <ion-content scroll="false" overflow-scroll="true">
+        <ion-slide-box slide-tabs-scrollable="true"  show-pager="false" ion-slide-tabs bar-assertive>
+            <ion-slide ion-slide-tab-label="Inbox">
+                <ion-view>
+                    <ion-content>
+                        <ion-list>
+                         <ion-item collection-repeat="message in messages" ng-click="single_messages(message.id)" style="border-bottom:1px solid #ccc">
+                                 <b>{{message.name}}</b><p></p>
+                                <small>{{message.email}}</small>
+                    </ion-list>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                     
+                    </ion-content>
+                </ion-view>
+            </ion-slide>
+            <ion-slide ion-slide-tab-label="To-me">
+                <ion-view>
+                    <ion-content>
+                        <ion-list>
+                      <ion-item collection-repeat="message in messages" style="border-bottom:1px solid #ccc">
+                            <b>{{message.name}}</b>
+                            <p>{{message.msg}}</p>
+                            <small>{{message.email}}</small>
+                      </ion-item>
+                    </ion-list>
+                    </ion-content>
+                </ion-view>
+            </ion-slide>
+            <ion-slide ion-slide-tab-label="To-Do">
+                 <ion-view>
+                    <ion-content>
+                        <ion-list>
+                      <ion-item collection-repeat="message in messages" style="border-bottom:1px solid #ccc">
+                            <b>{{message.name}}</b>
+                            <p>{{message.msg}}</p>
+                            <small>{{message.email}}</small>
+                      </ion-item>
+                    </ion-list>
+                    </ion-content>
+                </ion-view>
+            </ion-slide>
+            <ion-slide ion-slide-tab-label="Archives">
+                 <ion-view>
+                    <ion-content>
+                        <ion-list>
+                      <ion-item collection-repeat="message in messages" style="border-bottom:1px solid #ccc">
+                            <b>{{message.name}}</b>
+                            <p>{{message.msg}}</p>
+                            <small>{{message.email}}</small>
+                      </ion-item>
+                    </ion-list>
+                    </ion-content>
+                </ion-view>
+            </ion-slide>
+            
+        </ion-slide-box>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,44 @@
+<ion-view title="Sign in" hide-nav-bar="true" style="background: #74c043 !important;">
+    <ion-nav-buttons side="left">
+        <a ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons>
+    <form name="contractForm1">
+        <ion-content id="contract-details-content1" style="padding: 10%;"> 
+            <p style="color: #ffffff; margin-bottom:10%;">SIGN IN</p>
+            <div style="display:relative; ">
+              
+                <div style="border:transparent solid 1px;">
+                    <p style="color: #ffffff; font-size: 200%;">Enter PIN for:</p>
+                    <p style="color: #ffffff; font-size: 200%; font-weight: bold;">{{userphonenumber}}</p>
+                    <div style="margin-top:20%;">
+                        <div id="login" style="width: 75% !important; height: border:red solid 1px; overflow: hidden; float: left;">
+                            <input ng-model="pin" type="password" maxlength='4' id="password-field"/>
+                        </div>
+                        <span style="margin-top:0.3ch; font-size: 3ch; color: #fff;" 
+                        toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password">
+                        </span>
+                    </div>
+                    <p style="color: #ffffff; margin:20% 0 0;" ng-click="navigateTo('app.forgotpin')"> Forgot Password? </p>
+                </div>
+
+                <div style="position:absolute; bottom:0px; color:white; width:100%;">
+
+                    <div style="float: left;">
+                        <a ng-click="back()"> BACK </a>
+                    </div>
+
+                    <div style="float: right;">
+                        <a ng-click="login(pin)">
+                            SIGN IN
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </ion-content>
+    </form>
+</ion-view>
+
+

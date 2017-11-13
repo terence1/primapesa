@@ -1,0 +1,58 @@
+<!--View Information-->
+<!--View name : Pricing-->
+<!--State name : app.pricing-->
+<!--URL : #app/pricing-->
+
+<ion-view title="LOAN REPAYMENT">
+    <ion-nav-buttons side="left">
+        <a ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons>
+    
+    <ion-nav-buttons side="right">
+        <md-button ng-disabled="isLoading" class="md-icon-button ion-nav-button-right" ng-click="navigateTo('app.home')"
+                   aria-label="Setting">
+            <i class="ion-android-more-vertical"></i>
+        </md-button>
+    </ion-nav-buttons>
+    <ion-content scroll="false" overflow-scroll="true">
+        <ion-slide-box slide-tabs-scrollable="true"  show-pager="false" ion-slide-tabs bar-assertive>
+            <ion-slide ion-slide-tab-label="SELF REPAYMENT">
+                <ion-view>
+                    <ion-content style="margin-top:20% !important;">
+                        <div class="content" id="pricing-content">
+                            <div class="row price-detail">
+                                <p>1. Go to MPESA Menu<br/>
+                                2. Select Lipa Na Mpesa<br/>
+                                3. Paybill Option<br/>
+                                4. Enter Paybill No. <b>950468</b><br/>
+                                5. Account No.: <b>LOAN</b><br/>
+                                6. Enter Amount<br/>
+                                7. Enter PIN and confirm<br/><br/><br/>
+                                Primapesa will be notified instantly, and when the transaction is succeful, your loan will be repaid.
+                            </div>
+                        </div>
+                        
+                    </ion-content>
+                </ion-view>
+            </ion-slide>
+            <ion-slide ion-slide-tab-label="EMPLOYER REPAYMENT">
+                <ion-view>
+                    <ion-content style="margin-top:20% !important;">
+                        <div class="content" id="pricing-content">
+                            <div class="row price-detail">
+                                <p>Your Loan can be repaid by your Employer. This is through deduction from your salary at the end of the month.</p>
+                            </div>
+                        </div>
+                         
+                        
+                    </ion-content>
+                </ion-view>
+            </ion-slide>
+        
+            
+        </ion-slide-box>
+    </ion-content>
+
+</ion-view>

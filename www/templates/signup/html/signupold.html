@@ -1,0 +1,64 @@
+<ion-view title="Signup">
+    <!--left button on navigation bar-->
+    <ion-nav-buttons side="left">
+        <a ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons> <!--end left button on navigation bar-->
+
+    <!--contract detail section-->
+    <form name="contractForm">
+        <ion-content id="contract-details-content">
+            <!--contract detail input section-->
+            <md-input-container md-no-float>
+                <i class="ion-android-person"></i>
+                <input ng-model="firstname" name="firstname" required placeholder="* First Name (required)">
+            </md-input-container>
+            <md-input-container md-no-float>
+                <i class="ion-android-person"></i>
+                <input ng-model="lastname" name="lastname" required placeholder="* Last Name (required)">
+            </md-input-container>
+            <md-input-container md-no-float>
+                <i class="ion-android-phone-portrait"></i>
+                <input ng-model="phone" name="phone" required placeholder="* Phone (required)"
+                       type="tel">
+            </md-input-container>
+            <md-input-container md-no-float>
+                <i class="ion-android-mail"></i>
+                <input ng-model="email" name="email" placeholder="Email (required)">
+            </md-input-container>
+            <md-input-container md-no-float>
+                <i class="ion-android-phone-portrait"></i>
+                <input ng-model="idno" name="idno" required placeholder="* ID Number (required)"
+                       type="tel">
+            </md-input-container>
+             <md-input-container md-no-float>
+                <i class="ion-android-mail"></i>
+                <input ng-model="staffno" name="staffno" placeholder="Staff Number">
+            </md-input-container>
+            <md-input-container md-no-float>
+                <i class="ion-android-mail"></i>
+                <input ng-model="pin" name="pin" placeholder="*PIN (4 Digits)" type="password">
+            </md-input-container>
+            <md-input-container md-no-float>
+                <i class="ion-android-mail"></i>
+                <input ng-model="re_pin" name="re_pin" placeholder="* Confirm PIN (4 Digits)" type="password">
+            </md-input-container>
+            <md-input-container md-no-float>
+   
+            
+            <input type="checkbox" ng-model="terms_conditions" aria-label="Terms and Coditions"> Terms and Conditions
+          
+            </md-input-container>
+
+      
+            <div>
+                <a class="md-raised social-button md-button md-default-theme material-background" ng-click="signup(firstname, lastname, phone, email, idno, staffno, pin, re_pin)" style="width:95%;"> Sign In</a>
+            </div>
+
+        </ion-content>
+        
+    </form><!--end contract detail section-->
+
+
+</ion-view>

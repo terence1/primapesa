@@ -1,0 +1,61 @@
+
+<ion-view title="Loan Repayment" id="online-course">
+    <ion-nav-buttons side="left">
+        <a ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons>
+    
+    <ion-nav-buttons side="right">
+        <md-button ng-disabled="isLoading" class="md-icon-button ion-nav-button-right" ng-click="navigateTo('app.home')"
+                   aria-label="Setting">
+            <i class="ion-android-more-vertical"></i>
+        </md-button>
+    </ion-nav-buttons>
+    <ion-content id="online-course-content">
+        <md-toolbar class="bar-subheader md-tall md-primary toolbar-medium toolbar-in-content">
+            <div>
+               <!--  <h1>Kshs. </h1> -->
+
+                <h2>How to Repay a Loan</h2>
+
+                <h2>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </h2>
+            </div>
+        </md-toolbar>
+        <div class="course-list">
+            <div class="course-item">
+                <div class="title angular-course-background" style="background: #74c043 !important;">
+                    Self Repayment Plan
+                </div>
+                <div class="content" id="pricing-content">
+                    <div class="row price-detail">
+                        <p>1. Go to MPESA Menu<br/>
+                        2. Select Lipa Na Mpesa<br/>
+                        3. Paybill Option<br/>
+                        4. Enter Paybill No. <b>950468</b><br/>
+                        5. Account No.: <b>LOAN</b><br/>
+                        6. Enter Amount<br/>
+                        7. Enter PIN and confirm<br/><br/><br/>
+                        Primapesa will be notified instantly, and when the transaction is succeful, your loan will be repaid.
+                    </div>
+                </div>
+            </div> 
+            <div class="course-item">
+                <div class="title angular-course-background" style="background: #74c043 !important;">
+                    Employer Repayment Plan
+                </div>
+                <div class="content" id="pricing-content">
+                    <div class="row price-detail">
+                        <p>Your Loan can be repaid by your Employer. This is through deduction from your salary at the end of the month.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </ion-content>
+</ion-view><!--end online course section

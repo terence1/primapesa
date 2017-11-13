@@ -1,0 +1,139 @@
+<!--View Information-->
+<!--View name : Menu Dashboard-->
+<!--Controller name : menuDashboardCtrl-->
+<!--Controller path : www/templates/themes/menu-dashboard/js/controllers.js-->
+<!--State name : app.menuDashboard-->
+<!--URL : #app/menuDashboard-->
+
+<ion-view title="Home">
+ <!--right button on navigation bar-->
+    <ion-nav-buttons side="right">
+        <md-button class="md-icon-button ion-nav-button-right" ng-click="goToSetting()"
+                   aria-label="Setting">
+            <i class="ion-android-more-vertical"></i>
+        </md-button>
+    </ion-nav-buttons> <!--end right button on navigation bar-->
+
+    <!--toolbar section-->
+    <!-- <md-toolbar class="bar-subheader md-tall md-primary toolbar-medium">
+        <div>
+            <h1>Material Design</h1>
+
+            <h2>Ionic Material Design</h2>
+        </div>
+        <a class="md-button md-accent md-fab fab-toolbar-medium"
+           aria-label="Add">
+            <i class="icon ion-plus"></i>
+        </a>
+    </md-toolbar>-->
+    <ion-spinner name="bubbles"></ion-spinner>
+    <!--menu dashboard section-->
+    <ion-content id="menu-dashboard-content">
+        <!--panel section-->
+        <div class="menu-panel">
+            <div class="row">
+                <div class="col-33 {{addloanstateclass}}" ng-click="stateGo('apply')"> 
+                    <i class="fa fa-get-pocket"></i>
+                    <p>Apply Loan</p>
+                </div>
+                <div class="col-33 green" ng-click="stateGo('repay')">
+                    <i class="fa fa-external-link-square"></i>
+                    <p>Repay Loan</p>
+                </div>
+                <div class="col-33 green" ng-click="stateGo('status')">
+                    <i class="fa fa-line-chart"></i>
+                    <p>Loan Status</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 green" ng-click="stateGo('contactus')">
+                    <i class="fa fa-phone-square"></i>
+                    <p>Contact us</p>
+                </div>
+                <div class="col-33 green" ng-click="stateGo('faqs')">
+                    <i class="fa fa-comments"></i>
+                    <p>FAQs</p>
+                </div>
+                <div class="col-33 green" ng-click="stateGo('works')">
+                    <i class="fa fa-question-circle"></i>
+                    <p>How it Works</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 green" ng-click="stateGo('works')">
+                    <i class="fa fa-reply-all"></i>
+                    <p>Feedback</p>
+                </div>
+                <div class="col-33 green" ng-click="stateGo('news')">
+                    <i class="fa fa-newspaper-o"></i>
+                    <p>News</p>
+                </div>
+                <div class="col-33 green" ng-click="stateGo('myaccount')">
+                    <i class="fa fa-user"></i>
+                    <p>My Account</p>
+                </div>
+            </div>
+        </div><!--end panel section-->
+
+        <!--panel footer section-->
+        <div class="menu-dashboard-footer">
+            <md-whiteframe ng-show="isprimapesa_admin" class="md-whiteframe-z1 green-bg white" layout ng-click="navigateTo('app.toapprove')">
+                <div class="row">
+                    <div class="col-10">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="col-80">
+                        Approve / Reject Loans
+                    </div>
+                    <div class="col-10">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+            </md-whiteframe>
+            <md-whiteframe class="md-whiteframe-z1" layout ng-click="showToast('Coming Soon')">
+                <div class="row">
+                    <div class="col-10">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="col-80">
+                        Invite a friend
+                    </div>
+                    <div class="col-10">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+            </md-whiteframe>
+
+            <md-whiteframe class="md-whiteframe-z1" layout ng-click="showToast('Features Coming Soon')">
+                <div class="row">
+                    <div class="col-10">
+                        <i class="fa fa-cloud-download"></i>
+                    </div>
+                    <div class="col-80">
+                        Features coming soon
+                    </div>
+                    <div class="col-10">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+            </md-whiteframe>
+
+            <md-whiteframe class="md-whiteframe-z1" layout ng-click="showToast('www.primapesa.com')">
+                <div class="row">
+                    <div class="col-10">
+                        <i class="fa fa-wikipedia-w"></i>
+                    </div>
+                    <div class="col-80">
+                        Visit Our website
+                    </div>
+                    <div class="col-10">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+            </md-whiteframe>
+
+        </div><!--end panel footer section-->
+    </ion-content><!--Menu dashboard section-->
+</ion-view>

@@ -1,0 +1,72 @@
+<ion-view title="ACCOUNT" hide-nav-bar="true" style="background: #74c043 !important;">
+    <ion-nav-buttons side="left">
+        <a ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons>
+    <form name="contractForm1">
+        <ion-content id="contract-details-content1" style="padding: 10%;"> 
+            <p style="color: #ffffff; margin-bottom:10%;">PROFILE</p>
+            <div>
+                
+                <div style="border:transparent solid 1px; ">
+                    <div style="text-align: center">
+                        <img src="img/profile.png" style="width: 50%; margin: auto;"/>
+                    
+                        <p style="color: #ffffff; font-size: 110%; line-height: 1.8em;">
+                            Account For:
+                        </p>
+                        <p style="color: #ffffff; font-size: 170%; line-height: 1em; font-weight: bold;">{{ employee.name }}</p>
+                        <div style="color: #ffffff; font-size: 120%; padding: 4%; width: 80%; border-bottom: 1px solid #ffffff; border-top: 1px solid #ffffff; margin: auto; margin-top:5%;" ng-click="navigateTo('app.changepin')">
+                            <p>
+                            CHANGE PIN
+                        </p>
+                        </div>
+                        <div style="color: #ffffff; font-size: 120%; padding: 4%; width: 80%; border-bottom: 1px solid #ffffff; margin: auto;" ng-click="resetapp()">
+                            <p >
+                            RESET APP
+                        </p>
+                        </div>
+                        <div style="color: #ffffff; font-size: 120%; padding: 4%; width: 80%; border-bottom: 1px solid #ffffff; margin: auto;" ng-click="logout()">
+                            <p>
+                            LOGOUT
+                        </p>
+                        </div>
+                        
+                        <!-- <p style="color: #ffffff; font-size: 140%; line-height: 1.2em;">
+                            RESET APP
+                        </p>
+                        <p style="color: #ffffff; font-size: 140%; line-height: 1.2em;">
+                            LOGOUT
+                        </p> -->
+                        
+                    </div>
+                
+                   <!--  <div style="margin-top:10%;">
+                        <div style="width: 40% !important; float: left; color: #ffffff;">
+                            <p style="font-size: 120%;"> Enter Amount:</p> 
+                        </div>
+                        <div id="signup" style="width: 55% !important; margin-left: 5%; overflow: hidden; float: right;">
+                            <input ng-model="amount" type="tel"  maxlength='9' style="background: transparent;" /> 
+                        </div>
+                        
+                        
+                    </div> -->
+                    
+
+                </div>
+
+                <div style="text-align: center; margin-top:15%; color: #ffffff;">
+                    
+                        <!-- <p style="margin: auto; padding: 2% 3%; border: #ffffff 1px solid; width: 60%;" ng-click="apply(amount)">APPLY</p> -->
+                        <p ng-click="back()">
+                            <img src="img/home.png" style="width: 10%; margin: auto;"/>
+                        </p>
+                </div>
+          
+            </div>
+        </ion-content>
+    </form>
+</ion-view>
+
+

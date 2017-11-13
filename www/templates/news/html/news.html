@@ -1,0 +1,186 @@
+<!--View Information-->
+<!--View name : NEWS Feed-->
+<!--State name : app.newsFeed-->
+<!--URL : #app/newsFeed-->
+
+<ion-view title="NEWS">
+    <ion-nav-buttons side="left">
+        <a ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons>
+    
+    <ion-nav-buttons side="right">
+        <md-button ng-disabled="isLoading" class="md-icon-button ion-nav-button-right" ng-click="navigateTo('app.home')"
+                   aria-label="Setting">
+            <i class="ion-android-more-vertical"></i>
+        </md-button>
+    </ion-nav-buttons>
+    <!--news feed section-->
+    <ion-content id="news-feed-content">
+
+        <div class="news-item">
+
+            <!--header section-->
+            <div class="row header">
+                <div class="col-20">
+                    <img src="img/profileAvatar.jpg" class="user-img"/>
+                </div>
+                <div class="col-80">
+                   <span class="name">
+                        John Smith
+                   </span>
+                    <br/>
+                   <span class="datetime">
+                       1 hours ago
+                   </span>
+                </div>
+            </div><!--end header section-->
+
+            <!--detail section-->
+            <div class="row detail">
+                <div class="col">
+                    <h1>
+                        Cross-platform Abilities
+                    </h1>
+
+                    <p class="content">
+                       Our platform is not limited only to the use of internet or smartphones. Any user can access full services of Primapesa either online or offline through USSD. Primapesa can be access on multi devices without limitation to tablets, computers, smart phones or 
+                    </p>
+
+                    <p class="content">
+                        http://primapesa.com
+                    </p>
+
+                    <p class="tags">
+                        <i class="fa fa-tags"></i> Primapesa, Loans
+                    </p>
+                </div>
+            </div>
+
+            <!--footer section-->
+            <div class="row footer">
+                <div class="col-33">
+                    <span class="number">10.9k</span> <span class="wording">Likes</span>
+                </div>
+                <div class="col-33">
+                    <span class="number">20k</span> <span class="wording">Comments</span>
+                </div>
+                <div class="col-33">
+                    <span class="number">1k</span> <span class="wording">Shared</span>
+                </div>
+            </div><!--end footer section-->
+
+        </div>
+
+        <div class="news-item">
+
+            <!--header section-->
+            <div class="row header">
+                <div class="col-20">
+                    <img src="img/app_icon.png" class="user-img"/>
+                </div>
+                <div class="col-80">
+                   <span class="name">
+                        John Doe
+                   </span>
+                    <br/>
+                   <span class="datetime">
+                       3 hours ago
+                   </span>
+                </div>
+            </div><!--end header section-->
+
+            <!--detail section-->
+            <div class="row detail">
+                <div class="col">
+                    <h1>
+                        Affordable and Transparent
+                    </h1>
+
+                    <p class="content">
+                        Primapesa provides financial aid at low and affordable rates as compared to many other financial providers. Having different loan products, our terms allow easy, fast and flexible repayment plans that can either be on the employee or employer depending on the choice of the loanee. No hidden Charges!
+                    </p>
+
+                    <p class="content">
+                        http://primapesa.com
+                    </p>
+
+                    <p class="tags">
+                        <i class="fa fa-tags"></i> Primapesa, Loans
+                    </p>
+                </div>
+            </div><!--end detail section-->
+
+            <!--footer section-->
+            <div class="row footer">
+                <div class="col-33">
+                    <span class="number">10.9k</span> <span class="wording">Likes</span>
+                </div>
+                <div class="col-33">
+                    <span class="number">20k</span> <span class="wording">Comments</span>
+                </div>
+                <div class="col-33">
+                    <span class="number">1k</span> <span class="wording">Shared</span>
+                </div>
+            </div><!--end footer section-->
+
+        </div>
+
+        <div class="news-item">
+
+            <!--header section-->
+            <div class="row header">
+                <div class="col-20">
+                    <img src="img/profileAvatar.jpg" class="user-img"/>
+                </div>
+                <div class="col-80">
+                   <span class="name">
+                        John Smith
+                   </span>
+                    <br/>
+                   <span class="datetime">
+                       5 hours ago
+                   </span>
+                </div>
+            </div><!--end header section-->
+
+            <!--detail section-->
+            <div class="row detail">
+                <div class="col">
+                    <h1>
+                        Top notch Privacy and security
+                    </h1>
+
+                    <p class="content">
+                        Only you are entitle to view or edit your data, no one else, All data is double encrypted to protect against any misuse We are entitled to only work with data your employer and DO Not use it anywhere else other than in our loan algorithm engine
+                    </p>
+
+                    <p class="content">
+                        http://primapesa.com
+                    </p>
+
+                    <p class="tags">
+                        <i class="fa fa-tags"></i> Primapesa, Loans
+                    </p>
+                </div>
+            </div><!--end detail section-->
+
+            <!--footer section-->
+            <div class="row footer">
+                <div class="col-33">
+                    <span class="number">10.9k</span> <span class="wording">Likes</span>
+                </div>
+                <div class="col-33">
+                    <span class="number">20k</span> <span class="wording">Comments</span>
+                </div>
+                <div class="col-33">
+                    <span class="number">1k</span> <span class="wording">Shared</span>
+                </div>
+            </div><!--end footer section-->
+
+        </div>
+
+        <div class="row"></div>
+    </ion-content><!--end news feed section-->
+</ion-view>

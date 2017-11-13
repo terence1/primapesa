@@ -1,0 +1,43 @@
+<ion-view title="FORGOT PIN" hide-nav-bar="true" style="background: #74c043 !important;">
+    <ion-nav-buttons side="left">
+        <a ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons>
+    <form name="contractForm1">
+        <ion-content id="contract-details-content1" style="padding: 10%;"> 
+            <p style="color: #ffffff; margin-bottom:10%;">SET PIN</p>
+            <div style="display:relative; ">
+                <div style="border:transparent solid 1px;">
+                    <p style="color: #ffffff; font-size: 200%;">
+                        Forgot PIN?
+                    </p>
+    
+                    <p  style="color: #ffffff; font-size: 110%; line-height: 1.5em;">
+                        Enter Temporary PIN that has been sent to your phone.
+                    </p>
+
+                    <div style="margin-top:10%;">
+                        
+                        <div id="signup" style="width: 80% !important; overflow: hidden; margin:auto;">
+                            <input ng-model="code" type="text" style="background: transparent; width:100%;" /> 
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div style="text-align: center; margin-top:40%; color: #ffffff;">
+                    
+                        <p style="margin: auto; padding: 2% 3%; border: #ffffff 1px solid; width: 60%;" ng-click="forgotpin_code(code)">SUBMIT</p>
+                        <p style="margin-top:10%;" ng-click="navigateTo('app.login')">NO, THANKS
+                        <!-- HOME -->
+                    </p>
+                </div>
+          
+            </div>
+        </ion-content>
+    </form>
+</ion-view>
+
+
