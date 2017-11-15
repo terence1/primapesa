@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.primapesa.diamondangels" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.primapesa.com" version="1.0.0.1" versionCode="1.0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Primapesa</name>
     <description>
     Primapesa: Affordable Mobile Financial Aid.
   </description>
-    <author email="nza.terrence@gmail.com" href="http://sunflowerweb.nl/">
-    Terrence Nzaywa
+    <author email="terrence@sunflowerweb.nl" href="http://sunflowerweb.nl">
+    Diamond Angels
   </author>
     <content src="index.html" />
     <allow-navigation href="tel:*" />
