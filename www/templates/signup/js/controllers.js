@@ -58,7 +58,7 @@ function ($scope, $http, $filter, $rootScope, $timeout, $ionicHistory, $statePar
             };
             console.log(data);
             
-            $http.post('http://52e7b166.ngrok.io/web/mobile', data).success(function(data, status, headers, config) {
+            $http.post('http://app.primapesa.com/web/mobile', data).success(function(data, status, headers, config) {
                 console.log(data.result);
                 $scope.successful_post(data.result.msg, data.result.type);
 

@@ -17,8 +17,8 @@ function ($scope, $filter, $rootScope, $timeout, $ionicHistory, $stateParams, $s
         }, ($scope.isAnimated  ? 300 : 0));
     }; // End of navigateTo.
 
-    $rootScope.host = "http://52e7b166.ngrok.io";
-    // $rootScope.host = "http://52e7b166.ngrok.io";
+    $rootScope.host = "http://app.primapesa.com";
+    // $rootScope.host = "http://app.primapesa.com";
     $scope.database = 'primapesa';
     // $scope.database = 'primapesaaa';
     $scope.login_err1 = false;

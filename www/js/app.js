@@ -24,19 +24,8 @@ window.globalVariable = {
     startPage: {
         url: "/app/start",//Url of start page.
         state: "app.start"//State name of start page.
-    },
-    message: {
-        errorMessage: "Technical error please try again later." //Default error message.
-    },
-    oAuth: {
-      dropbox: "your_api_key",//Use for Dropbox API clientID.
-      facebook: "your_api_key",//Use for Facebook API appID.
-      foursquare: "your_api_key", //Use for Foursquare API clientID.
-      instagram: "your_api_key",//Use for Instagram API clientID.
-      googlePlus: "your_api_key",//Use for Google API clientID.
-    },
-    adMob: "your_api_key" //Use for AdMob API clientID.
-};// End Global variable
+    }
+};
 
 
 angular.module('starter', ['ionic','ionic.service.core','ngIOS9UIWebViewPatch', 'starter.controllers', 'starter.services', 'ngMaterial', 'ngMessages', 'ngCordova', 'ngCookies', 'odoo'])
@@ -67,34 +56,6 @@ angular.module('starter', ['ionic','ionic.service.core','ngIOS9UIWebViewPatch', 
               });
             }
         });
-
-        //Create database table of contracts by using sqlite database.
-        //Table schema :
-        //Column	   Type	     Primary key
-        //  id	        Integer	    Yes
-        //  firstName	Text	    No
-        //  lastName	Text	    No
-        //  telephone	Text	    No
-        //  email	    Text	    No
-        //  note	    Text	    No
-        //  createDate	DateTime	No
-        //  age	        Integer	    No
-        //  isEnable	Boolean	    No
-
-        function initialSQLite() {
-            db = window.cordova ? $cordovaSQLite.openDB("contract.db") : window.openDatabase("contract.db", "1.0", "IonicMaterialDesignDB", -1);
-            $cordovaSQLite.execute(db, "CREATE TABLE IF NOT EXISTS contracts " +
-                "( id           integer primary key   , " +
-                "  firstName    text                  , " +
-                "  lastName     text                  , " +
-                "  telephone    text                  , " +
-                "  email        text                  , " +
-                "  note         text                  , " +
-                "  createDate   dateTime              , " +
-                "  age          integer               , " +
-                "  isEnable     Boolean)                ");
-        };
-        // End creating SQLite database table.
 
         // Create custom defaultStyle.
         function getDefaultStyle() {
@@ -283,7 +244,6 @@ angular.module('starter', ['ionic','ionic.service.core','ngIOS9UIWebViewPatch', 
                 StatusBar.styleDefault();
             }
 
-            initialSQLite();
             initialRootScope();
 
 
@@ -539,7 +499,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngIOS9UIWebViewPatch', 
                 cache: false,
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/myaccount/html/mysetting.html",
+                        templateUrl: "templates/myaccount/html/account.html",
                         controller: 'mySettingCtrl'
                     }
                 }

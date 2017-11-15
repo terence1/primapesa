@@ -110,10 +110,6 @@ function ($scope, $filter, $rootScope, $timeout, $ionicHistory, $stateParams, $s
     $scope.stateGo = function (menuName) {
         $state.go('app.'+menuName+'');  
     }
-
-
-
-
     $scope.showToast = function (toastText) {
         //Calling $mdToast.show to show toast.
         $mdToast.show({

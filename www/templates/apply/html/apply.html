@@ -8,11 +8,10 @@
         <ion-content id="contract-details-content1" style="padding: 10%;"> 
             <p style="color: #ffffff; margin-bottom:10%;">APPLY LOAN</p>
             <div>
-                
+
                 <div style="border:transparent solid 1px; ">
                     <div style="text-align: center">
                         <img src="img/apply-loan.png" style="width: 70%; margin: auto;"/>
-                    
                         <p style="color: #ffffff; font-size: 110%; line-height: 1.8em;">
                             Your Loan Limit is:
                         </p>
@@ -23,13 +22,12 @@
                             repayment history.
                         </p>
                         <p ng-show="apply_error"> 
-                            <!-- <img src="img/fail.png" style="width: 10%;" style="float: left;" />  -->
                             <span style="float:right; color:red;" >
                                 {{ apply_error }}
                             </span>
                         </p>
                     </div>
-                
+
                     <div style="margin-top:10%;">
                         <div style="width: 40% !important; float: left; color: #ffffff;">
                             <p style="font-size: 120%;"> Enter Amount:</p> 
@@ -37,21 +35,15 @@
                         <div id="signup" style="width: 55% !important; margin-left: 5%; overflow: hidden; float: right;">
                             <input ng-model="amount" type="tel"  maxlength='9' style="background: transparent;" /> 
                         </div>
-                        
-                        
                     </div>
-                    
-
                 </div>
-
                 <div style="text-align: center; margin-top:40%; color: #ffffff;">
-                    
-                        <p style="margin: auto; padding: 2% 3%; border: #ffffff 1px solid; width: 60%;" ng-click="apply(amount)">APPLY</p>
-                        <p style="margin-top:10%;" ng-click="back()">NO, THANKS
+                    <p style="margin: auto; padding: 2% 3%; border: #ffffff 1px solid; width: 60%;" ng-click="apply(amount)">APPLY</p>
+                    <p style="margin-top:10%;" ng-click="back()">NO, THANKS
                         <!-- HOME -->
                     </p>
                 </div>
-          
+
             </div>
         </ion-content>
     </form>

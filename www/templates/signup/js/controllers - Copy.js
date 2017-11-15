@@ -24,7 +24,7 @@ function ($scope, $http, $filter, $rootScope, $timeout, $ionicHistory, $statePar
               'pin': pin,
             };
 
-            $http.post('http://52e7b166.ngrok.io/web/mobile', data).success(function(data, status, headers, config) {
+            $http.post('http://app.primapesa.com/web/mobile', data).success(function(data, status, headers, config) {
                 $scope.successful_post(data.result.msg, data.result.action);
 
                 // $scope.showToast('Some required fields are empty');

@@ -19,7 +19,7 @@ function ($scope, $http, $filter, $rootScope, $timeout, $ionicHistory, $statePar
           'email': $rootScope.forgot_email
         };
         
-        $http.post('http://52e7b166.ngrok.io/web/mobile', data).success(function(data, status, headers, config) {
+        $http.post('http://app.primapesa.com/web/mobile', data).success(function(data, status, headers, config) {
             console.log(data.result);
             // update code IN LOCAL STORAGE
             if (data.result.type == 'correct_user_details'){
